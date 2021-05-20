@@ -1,0 +1,25 @@
+.bg-fondo {
+	background-color: #bbd4d4;
+}
+
+header {
+	background-color: #4a4a77;
+	color: white;
+}
+
+footer {
+	background-color: #4a4a77;
+	color: white;
+}
+
+footer li {
+	list-style-type: none;
+}
+
+.bg-card {
+	background-color: #9b9aa3;
+}
+
+.plano {
+	text-align: center;
+}

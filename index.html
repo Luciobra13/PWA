@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+	<title>Lucio Mariano Brandi, Cátedra PWA</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="shortcut icon" href="img/nublado.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/nublado.png">
+
+</head>
+
+<body class="container-fluid col bg-fondo">
+	<header>
+		<h1 class="text-center">Pronostico Climático</h1>
+	</header>
+	<section class="contact-form pt-3">
+		<form id="contact-form">
+			<label for="search">Ciudad a buscar:</label>
+			<input title="Search" id="buscar" value="" type="text" required />
+
+			<button id="enviar" type="button">Enviar</button>
+		</form>
+	</section>
+
+	<div>
+		<h2 class="ciudad"></h2>
+		<img class="tiempo">
+		<p class="details"></p>
+	</div>
+
+	<div id="cuerpo">
+		<div class="row pt-3 pb-4 pt-4 d-flex justify-content-center">
+			<div class="card mr-5 bg-card mt-2" style="width: 18rem;">
+				<img src="img/termometro.png" style="width: 3em;" alt="icono temperatura">
+
+				<div class="card-body">
+					<h5 class="card-title">Temperatura °C</h5>
+					<p class="card-text"><span class="temperatura"></span></p>
+					<p class="card-text">Máxima:</p><span class="max">--</span>
+					<p class="card-text">Mínima:</p><span class="min">--</span>
+				</div>
+			</div>
+			<div class="card mr-5 bg-card mt-2" style="width: 18rem;">
+				<img src="img/humedad.png" style="width: 3em;" class="card-img-top" alt="icono humedad">
+
+				<div class="card-body">
+					<h5 class="card-title">Humedad %</h5>
+					<p class="card-text"><span class="hum"></span></p>
+				</div>
+			</div>
+			<div class="card mr-5 bg-card mt-2" style="width: 18rem;">
+				<img src="img/termica.png" style="width: 3em;" class="card-img-top" alt="icono sensacion termica">
+
+				<div class="card-body">
+					<h5 class="card-title">Sensación Térmica °C</h5>
+					<p class="card-text"></p><span class="st"></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="row pt-2 pb-2 d-flex justify-content-center">
+			<div class="card mr-5 bg-card mt-2" style="width: 18rem;">
+				<img src="img/presion.png" style="width: 3em;" class="card-img-top" alt="icono presion">
+
+				<div class="card-body">
+					<h5 class="card-title">Presión Atmosférica Hp</h5>
+					<p class="card-text">Valor:</p><span class="presion"></span>
+
+				</div>
+			</div>
+			<div class="card pt-2 pb-2 mr-5 bg-card mt-2" style="width: 18rem;">
+				<img src="img/viento.png" style="width: 3em;" class="card-img-top" alt="icono viento">
+
+				<div class="card-body">
+					<h5 class="card-title">Velocidad del Viento Km/h</h5>
+					<p class="card-text">valor</p><span class="viento"></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="plano mt-3 mb-3">
+			<iframe class="map" width="450" height="250" frameborder="0" style="border:0" src="" allowfullscreen>
+			</iframe>
+			
+		</div>
+
+		<footer>
+			<ul>
+				<li>Alumno: Lucio Mariano Brandi</li>
+				<li>Turno: Noche</li>
+				<li>Comisión: A</li>
+			</ul>
+		</footer>
+		<script src="js/main.js"></script>
+	</div>
+
+</body></html>
